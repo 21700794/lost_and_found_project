@@ -2,6 +2,8 @@ package com.my.mmy.lost;
 
 import java.util.Date;
 
+import org.springframework.web.multipart.MultipartFile;
+
 public class LostVO {
 	private int seq;
 	private String category;
@@ -9,7 +11,8 @@ public class LostVO {
 	private String place;
 	private String photo;
 	private Date regdate;
-	private int cnt;
+	private String find;
+	private MultipartFile uploadFile;
 	
 	public int getSeq() {
 		return seq;
@@ -47,12 +50,16 @@ public class LostVO {
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
 	}
-	public int getCnt() {
-		return cnt;
+	public String getFind() {
+		return find;
 	}
-	public void setCnt(int cnt) {
-		this.cnt = cnt;
+	public void setFind(String find) {
+		this.find = find;
 	}
-	
-	
+	public MultipartFile getUploadFile() {
+		return uploadFile;
+	}
+	public void setUploadFile(MultipartFile uploadFile) {
+		this.uploadFile = uploadFile;
+	}
 }

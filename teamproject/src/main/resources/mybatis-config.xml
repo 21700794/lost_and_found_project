@@ -5,6 +5,6 @@
 <configuration>
 	<typeAliases>
 		<typeAlias alias="lost" type="com.my.mmy.lost.LostVO" />
-		<typeAlias alias="user" type="com.my.mmy.lost.UserVO"/> 
+		<typeAlias alias="user" type="com.my.mmy.lost.UserVO" /> 
 	</typeAliases>
 </configuration>

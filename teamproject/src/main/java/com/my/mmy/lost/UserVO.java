@@ -2,6 +2,7 @@ package com.my.mmy.lost;
 
 public class UserVO {
 	private String userid;
+	private String username;
 	private String password;
 	public String getUserid() {
 		return userid;
@@ -15,5 +16,10 @@ public class UserVO {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
 }

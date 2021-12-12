@@ -91,11 +91,11 @@ body {
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
     <div class="form-floating">
-      <input type="text" class="form-control" id="floatingInput" placeholder="user id" name='userid'>
-      <label for="floatingInput">Email address</label>
+      <input type="text" class="form-control" id="floatingInput"  name='userid'>
+      <label for="floatingInput">UserID</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <input type="password" class="form-control" id="floatingPassword" name="password" >
       <label for="floatingPassword">Password</label>
     </div>
 
@@ -108,7 +108,7 @@ body {
 <!--     <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
 
  -->  
-     	<P> <a href="lost/list">앨범으로 이동</a> </P>
+   
  </form>
 </main>
 
