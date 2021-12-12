@@ -107,7 +107,7 @@
 
             <div class="card-body">
               <p class="card-text">
-		카테고리: ${u.category} <br> 이름: ${u.name} <br> 습득 장소: ${u.place} <br>습득 시각: ${u.find}	
+		카테고리: ${u.category} <br> 이름: ${u.name} <br> 습득 장소: ${u.place} <br>습득 시각: ${u.find} <br>특이 사항: ${u.detail}	
 			</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">

@@ -2,13 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Lost">
 	<insert id="insertLost">
-		insert into lost (category, name, place, photo, find)
+		insert into lost (category, name, place, find, detail)
 		values
-		(#{category}, #{name}, #{place}, #{photo}, #{find}])
+		(#{category}, #{name}, #{place}, #{find}, #{detail})
 	</insert>
 	<update id="updateLost">
 		update lost
-		set category=#{category}, name=#{name}, place=#{place}, photo=#{photo}, find=#{find}
+		set category=#{category}, name=#{name}, place=#{place}, find=#{find}, detail=#{detail}
 		where seq=#{seq}
 	</update>
 	<delete id="deleteLost">

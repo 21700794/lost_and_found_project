@@ -12,6 +12,7 @@ public class LostVO {
 	private String photo;
 	private Date regdate;
 	private String find;
+	private String detail;
 	private MultipartFile uploadFile;
 	
 	public int getSeq() {
@@ -62,4 +63,11 @@ public class LostVO {
 	public void setUploadFile(MultipartFile uploadFile) {
 		this.uploadFile = uploadFile;
 	}
+	public String getDetail() {
+		return detail;
+	}
+	public void setDetail(String detail) {
+		this.detail = detail;
+	}
+	
 }

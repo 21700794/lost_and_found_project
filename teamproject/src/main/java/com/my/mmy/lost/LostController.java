@@ -29,18 +29,18 @@ public class LostController {
 		return "addpostform";
 	}
 	
-	@RequestMapping(value = "/lost/addok", method=RequestMethod.GET)
+	@RequestMapping(value = "/lost/addok", method=RequestMethod.POST)
 	public String addPostOK(LostVO vo) throws IOException {
-		String fileName=null;
-		MultipartFile uploadFile = vo.getUploadFile();
-		if (!uploadFile.isEmpty()) {
-			String originalFileName = uploadFile.getOriginalFilename();
-			String ext = FilenameUtils.getExtension(originalFileName);
-			UUID uuid = UUID.randomUUID();	
-			fileName=uuid+"."+ext;
-			uploadFile.transferTo(new File("D:\\upload\\" + fileName));
-		}
-		vo.setPhoto(fileName);
+//		String fileName=null;
+//		MultipartFile uploadFile = vo.getUploadFile();
+//		if (!uploadFile.isEmpty()) {
+//			String originalFileName = uploadFile.getOriginalFilename();
+//			String ext = FilenameUtils.getExtension(originalFileName);	//확장자 구하기
+//			UUID uuid = UUID.randomUUID();	//UUID 구하기
+//			fileName=uuid+"."+ext;
+//			uploadFile.transferTo(new File("D:\\upload\\" + fileName));
+//		}
+//		vo.setPhoto(fileName);
 		int i = lostService.insertLost(vo);
 		if (i == 0)
 			System.out.println("데이터 추가 실패!");
@@ -56,7 +56,7 @@ public class LostController {
 		return "editform";
 	}
 	
-	@RequestMapping(value = "/lost/editok", method=RequestMethod.GET)
+	@RequestMapping(value = "/lost/editok", method=RequestMethod.POST)
 	public String editPostOK(LostVO vo) {
 		int i = lostService.updateLost(vo);
 		if (i == 0)

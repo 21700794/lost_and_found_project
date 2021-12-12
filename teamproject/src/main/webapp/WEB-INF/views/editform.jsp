@@ -69,12 +69,20 @@
             
             <div class="col-12">
               <label for="photo" class="form-label">사진</label>
-              <form:input type="file" class="form-control" path="photo" />
+              <form:input type="file" class="form-control" path="" />
             </div> 
             
             <div class="col-12">
               <label for="find" class="form-label">습득 시간</label>
-              <form:input type="date" class="form-control" path="find"  />
+              <form:input type="text" class="form-control" path="find" />
+              <div class="invalid-feedback">
+                Please enter the time when you found the lost item.
+              </div>
+            </div>
+            
+            <div class="col-12">
+              <label for="detail" class="form-label">특이 사항</label>
+              <form:textarea cols="50" rows="5" class="form-control" path="detail" ></form:textarea>
               <div class="invalid-feedback">
                 Please enter the time when you found the lost item.
               </div>
@@ -86,9 +94,5 @@
       </div>
     </div>
 	</main>
-
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="form-validation.js"></script>
 </body>
 </html>
