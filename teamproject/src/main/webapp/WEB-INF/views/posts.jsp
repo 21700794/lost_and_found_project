@@ -53,7 +53,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">프로젝트 기회의도</h4>
+          <h4 class="text-white">프로젝트 기획의도</h4>
           <p class="text-muted">현재 손양원RC에서 많은 분실물들이 발생하고 있습니다. 이 분실물든은 대부분 주인을 찾지 못하여 폐기되거나 간혹 실명 카톡방에 분실물 주인을 찾는 글이 올라와 주인과 연락이 됩니다. 저희는 조금 더 체계화된 분실물 처리 시스템이 필요하다고 생각하여 이 프로젝트를 기획하게 되었습니다. </p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">

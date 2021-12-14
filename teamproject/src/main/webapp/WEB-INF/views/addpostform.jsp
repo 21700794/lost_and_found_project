@@ -71,7 +71,7 @@
             
             <div class="col-12">
               <label for="find" class="form-label">습득 시간</label>
-              <input type="text" class="form-control" name="find" id="find">
+              <input type="text" class="form-control" name="find" id="find" placeholder="2021/12/09 12">
               <div class="invalid-feedback">
                 Please enter the time when you found the lost item.
               </div>

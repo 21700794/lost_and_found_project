@@ -81,11 +81,11 @@ body {
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
     <div class="form-floating">
-      <input type="text" class="form-control" id="floatingInput"  name='userid'>
+      <input type="text" class="form-control" id="floatingInput"  name="userid" placeholder="UserID">
       <label for="floatingInput">UserID</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" name="password" >
+      <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
       <label for="floatingPassword">Password</label>
     </div>
 
@@ -94,7 +94,7 @@ body {
         <input type="checkbox" value="remember-me"> Remember me
       </label>
     </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Log in</button>
    
  </form>
 </main>
