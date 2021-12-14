@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@page import="com.my.mmy.lost.LostDAO, com.my.mmy.lost.LostVO,java.util.*"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!-- core 태그 라이브러리 선언  -->
 <!doctype html>
 <html lang="en">
@@ -116,7 +117,7 @@
                   <a href="javascript:delete_ok('${u.seq}')">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button></a>
                 </div>
-                <small class="text-muted">${u.regdate}</small>
+                <small class="text-muted"><fmt:formatDate value="${u.regdate}" pattern="yyyy년 MM월 dd일 HH시 mm분" /></small>
               </div>
             </div>
           </div>
